@@ -1,0 +1,40 @@
+.navbar {
+    width: 95%;
+    height: 8vh;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: black;
+    font-family: 'Montserrat';
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.logo {
+    justify-content: flex-start;
+    border: 1px solid red;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.navbarLinks {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.worksButton {
+    color: white;
+    background-color: black;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px;
+    height: 30px;
+    padding: 10px;
+}

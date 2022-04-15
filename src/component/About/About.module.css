@@ -1,0 +1,52 @@
+.about {
+    display: flex;
+    margin: 0 auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 95vw;
+    height: 100vh;
+    gap: 100px;
+    /* border: 1px solid red; */
+}
+
+.aboutText {
+    margin-top: 10%;
+    width: 40%;
+}
+
+.downloadCV {
+    margin-top: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 250px;
+    height: 50px;
+    background-color: rgb(245, 169, 29);
+    font-weight: 400;
+    border-radius: 10px;
+    letter-spacing: 0.1em;
+    cursor: pointer;
+}
+
+.skills {
+    margin-top: 10%;
+    width: 40%;
+    height: 30%;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-transform: uppercase;
+    gap: 5px;
+
+}
+
+.skills p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 50px;
+    border-radius: 10px;
+    border: 1px solid black;
+}
