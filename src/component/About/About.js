@@ -1,4 +1,5 @@
 import styles from "./About.module.css";
+import resume from "../../files/resume.jpg";
 
 function About() {
   return (
@@ -14,7 +15,9 @@ function About() {
           iaculis lectus diam at ex. Pellentesque rutrum enim in mauris maximus
           gravida. Proin sed metus a magna lobortis dapibus et vitae magna.
         </p>
-        <h3 className={styles.downloadCV}>Download my CV</h3>
+        <a href={resume} download="resume.jpg" className={styles.downloadCV}>
+          <p>Download my CV</p>
+        </a>
       </div>
 
       <div className={styles.skills}>

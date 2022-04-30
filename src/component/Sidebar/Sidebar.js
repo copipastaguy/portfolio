@@ -4,8 +4,13 @@ import { BsLinkedin, BsGithub } from "react-icons/bs";
 function Sidebar() {
   return (
     <div className={styles.sidebar}>
-      <BsLinkedin fontSize="2em" />
-      <BsGithub fontSize="2em" />
+      <a href="https://www.linkedin.com/in/alfredchor">
+        <BsLinkedin fontSize="2em" />
+      </a>
+
+      <a href="https://github.com/copipastaguy">
+        <BsGithub fontSize="2em" />
+      </a>
     </div>
   );
 }

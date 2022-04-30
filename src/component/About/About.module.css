@@ -6,15 +6,15 @@
     max-width: 95vw;
     height: 100vh;
     gap: 100px;
-    /* border: 1px solid red; */
 }
 
 .aboutText {
     margin-top: 10%;
-    width: 40%;
+    width: 45%;
 }
 
 .downloadCV {
+    font-family: "Montserrat";
     margin-top: 10%;
     display: flex;
     justify-content: center;
@@ -22,7 +22,7 @@
     width: 250px;
     height: 50px;
     background-color: rgb(245, 169, 29);
-    font-weight: 400;
+    font-weight: 600;
     border-radius: 10px;
     letter-spacing: 0.1em;
     cursor: pointer;
@@ -42,11 +42,12 @@
 }
 
 .skills p {
+    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 120px;
     height: 50px;
     border-radius: 10px;
-    border: 1px solid black;
+    border: 2px solid black;
 }
