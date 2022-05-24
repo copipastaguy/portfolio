@@ -1,11 +1,10 @@
 .masthead {
-    max-width: 95vw;
     height: 100vh;
-    margin: 0 auto;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 50px;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .mastheadImage {
@@ -13,12 +12,22 @@
 }
 
 .mastheadHeading {
-    font-size: 50px;
-    letter-spacing: 0.5rem;
+    width: 100%;
+    font-size: 2em;
+    letter-spacing: 0.2rem;
 }
 
-.mastheadText {
-    width: 40%;
+.mastheadIntro {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.coloredWord {
+    color: red;
+}
+
+.coloredBracket {
+    color: blue;
 }
 
 .scrollDown {
@@ -35,3 +44,9 @@
     letter-spacing: 2px;
     font-size: 18px;
 }
+
+@media only screen and (max-width: 768px) {
+    .mastheadImage {
+        display: none;
+    }
+  }

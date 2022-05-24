@@ -6,10 +6,10 @@
 
 .App {
     margin: 0 auto;
-    max-width: 98vw;
     scrollbar-width: none;
     -ms-overflow-style: none;
     overflow-y: scroll;
+    /* background-image: url("../src/files/background.jpg"); */
 }
 
 a {

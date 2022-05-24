@@ -8,30 +8,16 @@ import Footer from "./component/Footer/Footer";
 // Routes
 import Contact from "./component/Contact/Contact";
 import Works from "./component/Works/Works";
-
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Cookie from "./component/Cookie/Cookie";
 
 function App() {
   return (
     <div className="App">
-      <Router>
-        <NavBar />
-        <Sidebar />
-
-        <Routes>
-          <Route
-            path="/"
-            element={
-              <>
-                <Masthead /> <About />
-                <Footer />
-              </>
-            }
-          />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/works" element={<Works />} />
-        </Routes>
-      </Router>
+      <NavBar />
+      <Masthead />
+      {/* <Sidebar /> */}
+      <Works />
+      <Footer />
     </div>
   );
 }
