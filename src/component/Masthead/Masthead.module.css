@@ -1,52 +1,56 @@
 .masthead {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 50px;
-    font-family: 'Roboto Mono', monospace;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  font-family: "Roboto Mono", monospace;
 }
 
 .mastheadImage {
-    width: 300px;
+  width: 300px;
 }
 
 .mastheadHeading {
-    width: 100%;
-    font-size: 2em;
-    letter-spacing: 0.2rem;
+  width: 100%;
+  font-size: 2em;
+  letter-spacing: 0.2rem;
 }
 
 .mastheadIntro {
-    font-size: 18px;
-    font-weight: 600;
+  font-size: 18px;
+  font-weight: 600;
 }
 
 .coloredWord {
-    color: red;
+  color: red;
 }
 
 .coloredBracket {
-    color: blue;
+  color: blue;
 }
 
 .scrollDown {
-    position: absolute;
-    bottom: 5%;
-    background-color: black;
-    color: white;
-    width: 200px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    letter-spacing: 2px;
-    font-size: 18px;
+  position: absolute;
+  bottom: 5%;
+  background-color: black;
+  color: white;
+  width: 200px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  letter-spacing: 2px;
+  font-size: 18px;
 }
 
 @media only screen and (max-width: 768px) {
-    .mastheadImage {
-        display: none;
-    }
+  .mastheadImage {
+    display: none;
   }
+
+  .memoji {
+    display: none;
+  }
+}

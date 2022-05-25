@@ -9,7 +9,7 @@ function Masthead() {
   return (
     <div className={styles.masthead}>
       {/* <img className={styles.mastheadImage} src={image} alt="user-pic" /> */}
-      <img src={memoji} />
+      <img className={styles.memoji} src={memoji} />
       <div className={styles.mastheadText}>
         <h1 className={styles.mastheadHeading}>
           print&#40;&#34;Hello World!&#34;&#41;&#59;
@@ -26,7 +26,7 @@ function Masthead() {
           &emsp; <span className={styles.coloredWord}>age:</span> {year - 2000},
           <br />
           &emsp; <span className={styles.coloredWord}>what:</span> "Interaction
-          Designer/ Front-End Developer",
+          Designer/ Front-End Developer" 
           <br />
           <span className={styles.coloredBracket}>&#125;</span>
         </p>

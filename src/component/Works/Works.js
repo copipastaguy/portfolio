@@ -37,9 +37,9 @@ function Works() {
       language: "Python",
     },
   ];
-  works.map(({ name, tags }) => {
-    console.log(`${name} ${tags}`);
-  });
+  // works.map(({ name, tags }) => {
+  //   console.log(`${name} ${tags}`);
+  // });
 
   return (
     <div className={styles.works}>
