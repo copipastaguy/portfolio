@@ -15,7 +15,7 @@ function Works() {
     {
       id: 1,
       name: "ReactJS Youtube Clone",
-      link: "",
+      link: "https://github.com/copipastaguy/react-youtube-clone",
       description: "Youtube UI clone made with ReactJS",
       tags: ["web development, ReactJS"],
       language: "ReactJS",
@@ -23,7 +23,7 @@ function Works() {
     {
       id: 2,
       name: "ReactJS ToDo",
-      link: "",
+      link: "https://github.com/copipastaguy/python/tree/main/todolist",
       description: "ToDo UI WebApp made with ReactJS",
       tags: ["web development, ReactJS"],
       language: "ReactJS",
@@ -31,7 +31,7 @@ function Works() {
     {
       id: 3,
       name: "Python Jankenpon",
-      link: "",
+      link: "https://github.com/copipastaguy/python/tree/main/jankenpon",
       description: "Python command line Rock Paper Scissors",
       tags: ["python"],
       language: "Python",

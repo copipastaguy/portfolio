@@ -13,6 +13,7 @@ import Cookie from "./component/Cookie/Cookie";
 function App() {
   return (
     <div className="App">
+      <div className="container"></div>
       <NavBar />
       <Masthead />
       {/* <Sidebar /> */}
