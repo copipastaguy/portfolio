@@ -1,5 +1,6 @@
 import image from "../../files/user.png";
 import styles from "./Masthead.module.css";
+import memoji from "../../files/memoji/sticker02.png";
 
 function Masthead() {
   const date = new Date();
@@ -8,7 +9,7 @@ function Masthead() {
   return (
     <div className={styles.masthead}>
       {/* <img className={styles.mastheadImage} src={image} alt="user-pic" /> */}
-
+      <img src={memoji} />
       <div className={styles.mastheadText}>
         <h1 className={styles.mastheadHeading}>
           print&#40;&#34;Hello World!&#34;&#41;&#59;
