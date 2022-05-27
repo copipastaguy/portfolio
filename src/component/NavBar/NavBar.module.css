@@ -28,8 +28,9 @@
 
 .social {
   display: flex;
-  /* width: 10%; */
-  justify-content: space-around;
+  padding: 10px;
+  /* justify-content: space-around; */
+  gap: 20px;
 }
 
 .worksButton {

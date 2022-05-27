@@ -20,6 +20,7 @@
 .mastheadIntro {
   font-size: 18px;
   font-weight: 600;
+  /* width: 70%; */
 }
 
 .coloredWord {
@@ -46,6 +47,12 @@
 }
 
 @media only screen and (max-width: 768px) {
+  .mastheadHeading,
+  .mastheadIntro {
+    font-size: 14px;
+    /* width: 70%; */
+  }
+
   .mastheadImage {
     display: none;
   }
