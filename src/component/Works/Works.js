@@ -28,9 +28,9 @@ function Works() {
       language: "ReactJS",
     },
     {
-      name: "ReactJS ToDo",
-      link: "https://github.com/copipastaguy/python/tree/main/todolist",
-      description: "ToDo UI WebApp made with ReactJS",
+      name: "Champion Bolo Bun",
+      link: "https://copipastaguy.github.io/champion-bolo-bun/",
+      description: "Prototype Champion Bolo Bun website made with ReactJS",
       tags: ["web development, ReactJS"],
       tag: {
         tag01: "web development",
