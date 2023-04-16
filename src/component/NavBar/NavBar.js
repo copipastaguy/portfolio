@@ -1,32 +1,22 @@
-import styles from "./NavBar.module.css";
-import {
-  AiFillLinkedin,
-  AiFillGithub,
-  AiFillBehanceSquare,
-} from "react-icons/ai";
-import memoji from "../../files/memoji/sticker02.png";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import { Grid, Link } from "@mui/material";
 
 function NavBar() {
   return (
-    <div className={styles.navbar}>
-      {/* <div className={styles.logo}>
-        <img src={memoji} />
-      </div> */}
+    <Grid container alignItems="center" spacing={2} padding={2}>
+      <Grid item>
+        <Link href="https://linkedin.com/in/copipastaguy" color="inherit">
+          <LinkedInIcon fontSize="large" />
+        </Link>
+      </Grid>
 
-      <div className={styles.social}>
-        <a href="https://linkedin.com/in/copipastaguy">
-          <AiFillLinkedin fontSize="2em" />
-        </a>
-
-        <a href="https://github.com/copipastaguy">
-          <AiFillGithub fontSize="2em" />
-        </a>
-
-        <a href="https://www.behance.net/alfredchor">
-          <AiFillBehanceSquare fontSize="2em" />
-        </a>
-      </div>
-    </div>
+      <Grid item>
+        <Link href="https://github.com/copipastaguy" color="inherit">
+          <GitHubIcon fontSize="large" />
+        </Link>
+      </Grid>
+    </Grid>
   );
 }
 
