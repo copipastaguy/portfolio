@@ -1,25 +1,44 @@
+import { Grid } from "@mui/material";
+import CssBaseline from "@mui/material/CssBaseline";
+import { ThemeProvider, createTheme } from "@mui/material/styles";
 import "./App.css";
-import NavBar from "./component/NavBar/NavBar.js";
+
 import Masthead from "./component/Masthead/Masthead";
-import Sidebar from "./component/Sidebar/Sidebar";
+import NavBar from "./component/NavBar/NavBar.js";
+import Works from "./component/Works/Works";
+
+// import Sidebar from "./component/Sidebar/Sidebar";
 import About from "./component/About/About";
 import Footer from "./component/Footer/Footer";
 
 // Routes
-import Contact from "./component/Contact/Contact";
-import Works from "./component/Works/Works";
-import Cookie from "./component/Cookie/Cookie";
+// import Contact from "./component/Contact/Contact";
 
 function App() {
+  const theme = createTheme({
+    palette: {
+      mode: "dark",
+    },
+    typography: {
+      fontFamily: ["Montserrat", "Roboto", "monospace"].join(","),
+    },
+  });
   return (
-    <div className="App">
-      <div className="container"></div>
-      <NavBar />
-      <Masthead />
-      {/* <Sidebar /> */}
-      <Works />
-      <Footer />
-    </div>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Grid container width="95vw" sx={{ margin: "0 auto" }}>
+        <div className="App">
+          <div className="container"></div>
+          <NavBar />
+          <Masthead />
+
+          {/* <Sidebar /> */}
+          <Works />
+          <About />
+          <Footer />
+        </div>
+      </Grid>
+    </ThemeProvider>
   );
 }
 

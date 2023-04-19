@@ -1,53 +1,63 @@
-import image from "../../files/user.png";
-import styles from "./Masthead.module.css";
 import memoji from "../../files/memoji/sticker02.png";
+import styles from "./Masthead.module.css";
+
+import { Grid, Stack, Typography, Link, Button } from "@mui/material";
 
 function Masthead() {
   const date = new Date();
   const year = date.getFullYear();
 
+  const frontendSkills = ["HTML", "CSS", "React.js", "Electron.js"];
+  const backendSkills = ["Node.js", "Express.js", "MySQL"];
+  const devopsSkills = ["Docker", "Git", "Gitlab"];
+
   return (
-    <div className={styles.masthead}>
-      {/* <img className={styles.mastheadImage} src={image} alt="user-pic" /> */}
-      <img className={styles.memoji} src={memoji} />
-      <div className={styles.mastheadText}>
-        <h1 className={styles.mastheadHeading}>
-          print&#40;&#34;Hello World!&#34;&#41;&#59;
-        </h1>
-        <p className={styles.mastheadIntro}>
-          <span className={styles.coloredWord}>const</span> profile = {""}
-          <span className={styles.coloredBracket}>&#123;</span>
-          <br />
-          &emsp; <span className={styles.coloredWord}>name:</span> "Alfred aka
-          copipastaguy", <br />
-          &emsp; <span className={styles.coloredWord}>
-            where:
-          </span> "Singapore", <br />
-          &emsp; <span className={styles.coloredWord}>age:</span> {year - 2000},
-          <br />
-          &emsp; <span className={styles.coloredWord}>what:</span> "Interaction
-          Designer/ Front-End Developer" 
-          <br />
-          <span className={styles.coloredBracket}>&#125;</span>
-        </p>
+    <Grid container height="100vh" alignItems="center" justifyContent="center" spacing={2}>
+      <Grid item>
+        <img className={styles.memoji} src={memoji} alt="memoji" />
+      </Grid>
 
-        <p className={styles.mastheadIntro}>
-          <span className={styles.coloredWord}>const</span> languages = {""}
-          <span className={styles.coloredBracket}>&#123;</span>
-          <br />
-          &emsp; <span className={styles.coloredWord}>frontend:</span>
-          "HTML5", "CSS3", "JAVASCRIPT" <br />
-          &emsp; <span className={styles.coloredWord}>learning:</span>
-          "PYTHON", "REACTJS"
-          <br />
-          <span className={styles.coloredBracket}>&#125;</span>
-        </p>
-      </div>
+      <Stack spacing={2}>
+        <Grid item>
+          <Typography variant="h2" fontWeight={400} fontFamily="monospace">
+            console.log&#40;&#34;I'm Alfred&#34;&#41;&#59;
+          </Typography>
+        </Grid>
 
-      {/* <div className={styles.scrollDown}>
-        <p>CLICK ME</p>
-      </div> */}
-    </div>
+        <Grid item>
+          <Stack>
+            <Typography fontWeight={700} fontFamily="monospace">
+              <span className={styles.coloredWord}>const</span> profile = &#123; <br />
+              &emsp; <span className={styles.coloredWord}>name:</span> "Alfred", <br />
+              &emsp; <span className={styles.coloredWord}>where:</span> "Singapore", <br />
+              &emsp; <span className={styles.coloredWord}>age:</span> {year - 2000}, <br />
+              &emsp; <span className={styles.coloredWord}>what:</span> "Full-Stack Software Engineer", <br />
+              &emsp; <span className={styles.coloredWord}>skills:</span> &#123; <br />
+              &emsp; &emsp; <span className={styles.coloredWord}>frontend:</span>[
+              {frontendSkills.map((skill) => (
+                <span>"{skill}",</span>
+              ))}
+              ]
+              <br />
+              &emsp; &emsp; <span className={styles.coloredWord}>backend:</span>[
+              {backendSkills.map((skill) => (
+                <span>"{skill}", </span>
+              ))}
+              ]
+              <br />
+              &emsp; &emsp; <span className={styles.coloredWord}>devOps:</span>[
+              {devopsSkills.map((skill) => (
+                <span>"{skill}", </span>
+              ))}
+              ]
+              <br />
+              &emsp; &#125;
+            </Typography>
+            &#125;
+          </Stack>
+        </Grid>
+      </Stack>
+    </Grid>
   );
 }
 
