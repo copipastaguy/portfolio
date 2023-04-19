@@ -1,6 +1,7 @@
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
-import { Grid, Link } from "@mui/material";
+import DownloadIcon from "@mui/icons-material/Download";
+import { Grid, Link, Button } from "@mui/material";
 
 function NavBar() {
   return (
@@ -15,6 +16,12 @@ function NavBar() {
         <Link href="https://github.com/copipastaguy" color="inherit">
           <GitHubIcon fontSize="large" />
         </Link>
+      </Grid>
+
+      <Grid item>
+        <Button startIcon={<DownloadIcon />} color="inherit">
+          Resume
+        </Button>
       </Grid>
     </Grid>
   );

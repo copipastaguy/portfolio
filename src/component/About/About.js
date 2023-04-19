@@ -1,36 +1,43 @@
-import styles from "./About.module.css";
-import resume from "../../files/resume.jpg";
+import React from "react";
+import { Grid, Stack, Typography, Link, Button } from "@mui/material";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 
-function About() {
+const About = () => {
+  const skills = ["Javascript (ES6+)", "React.js", "Next.js", "Node.js", "Express.js", "Docker", "Gitlab"];
   return (
-    <div className={styles.about}>
-      <div className={styles.aboutText}>
-        <h1>Who am i</h1>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur dui
-          quam, accumsan id luctus sit amet, venenatis at erat. Cras vitae
-          sapien vitae sem finibus vehicula. Phasellus lacinia egestas iaculis.
-          Nulla vestibulum lacus sit amet nulla finibus ultrices. Praesent
-          hendrerit, est ut rutrum blandit, sapien libero fermentum tellus, a
-          iaculis lectus diam at ex. Pellentesque rutrum enim in mauris maximus
-          gravida. Proin sed metus a magna lobortis dapibus et vitae magna.
-        </p>
-        <a href={resume} download="resume.jpg" className={styles.downloadCV}>
-          <p>Download my CV</p>
-        </a>
-      </div>
+    <Grid container padding={2}>
+      <Stack spacing={2}>
+        <Grid item>
+          <Typography variant="h4">About me:</Typography>
+          <Typography variant="h6">Hi! My name is Alfred and I started web development back in 2018 with HTML, CSS, Javascript and jQuery.</Typography>
+          <Typography variant="h6">
+            I started learning React.js and other frameworks in 2022 while doing tutorial projects which you can see some of it &nbsp;
+            <Link href="https://github.com/copipastaguy" color="inherit">
+              here
+            </Link>
+          </Typography>
+        </Grid>
 
-      <div className={styles.skills}>
-        <p>html</p>
-        <p>css</p>
-        <p>javascript</p>
-        <p>jquery</p>
-        <p>adobe xd</p>
-        <p>prototype</p>
-        <p>wireframe</p>
-      </div>
-    </div>
+        <Grid item>
+          <Typography>Some technologies that i have worked with recently:</Typography>
+
+          <Grid container width="40%">
+            {skills.map((skill) => (
+              <Grid item lg={6} xl={6}>
+                <Stack direction="row" alignItems="center">
+                  <Typography>
+                    <ArrowRightIcon sx={{ color: "red" }} fontSize="large" />
+                  </Typography>
+
+                  <Typography>{skill}</Typography>
+                </Stack>
+              </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Stack>
+    </Grid>
   );
-}
+};
 
 export default About;
