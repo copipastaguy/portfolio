@@ -9,12 +9,12 @@ function Works() {
       description: "Task management system designed for collaboration in an agile scrum project. Ease of management and collaboration for project managers in kanban style.",
       tags: ["React.js", "Express.js", "MySQL", "Docker"],
     },
-    {
-      name: "Youtube Clone",
-      link: "https://github.com/copipastaguy/react-youtube-clone",
-      description: "Youtube clone made with React.js",
-      tags: ["React.js"],
-    },
+    // {
+    //   name: "Youtube Clone",
+    //   link: "https://github.com/copipastaguy/react-youtube-clone",
+    //   description: "Youtube clone made with React.js",
+    //   tags: ["React.js"],
+    // },
     // {
     //   name: "Champion Bolo Bun",
     //   link: "https://copipastaguy.github.io/champion-bolo-bun/",
