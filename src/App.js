@@ -6,13 +6,7 @@ import "./App.css";
 import Masthead from "./component/Masthead/Masthead";
 import NavBar from "./component/NavBar/NavBar.js";
 import Works from "./component/Works/Works";
-
-// import Sidebar from "./component/Sidebar/Sidebar";
-import About from "./component/About/About";
 import Footer from "./component/Footer/Footer";
-
-// Routes
-// import Contact from "./component/Contact/Contact";
 
 function App() {
   const theme = createTheme({
@@ -31,10 +25,8 @@ function App() {
           <div className="container"></div>
           <NavBar />
           <Masthead />
-
-          {/* <Sidebar /> */}
           <Works />
-          <About />
+          {/* <About /> */}
           <Footer />
         </div>
       </Grid>
