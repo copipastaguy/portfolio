@@ -11,7 +11,7 @@ function Masthead() {
   const frontendSkills = ["HTML", "CSS", "Javascript", "Python"];
   const backendSkills = ["Node.js", "Express.js", "MySQL"];
   const devopsSkills = ["Docker", "Git", "Gitlab", "Kubernetes"];
-  const certificate = ["AWS Solutions Architect - Associate"];
+  const certificates = ["AWS Solutions Architect - Associate"];
 
   const downloadResume = async () => {
     const file = await fetch("https://raw.githubusercontent.com/copipastaguy/resume/main/cv.pdf");
@@ -57,9 +57,9 @@ function Masthead() {
               <br />
               &emsp; &#125;
               <br />
-              &emsp; <span className={styles.coloredWord}>certificates: </span>[{certificate.map((skill) => `"${skill}"`).join(", ")}]
+              &emsp; <span className={styles.coloredWord}>certificates: </span>[{certificates.map((skill) => `"${skill}"`).join(", ")}]
               <br />
-              &emsp; <span className={styles.coloredWord}>learning:</span> "Cloud Technology (AWS)"
+              &emsp; <span className={styles.coloredWord}>interested:</span> ["Cloud", "DevOps"]
               <br />
             </Typography>
             &#125;

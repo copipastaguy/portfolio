@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Kanban",
+    "link": "https://github.com/copipastaguy/task-management-system-MERN",
+    "description": "Task management system designed for collaboration in an AGILE scrum project. Ease of management and collaboration for project managers in kanban style. Learnt the basics of working within an airgapped environment.",
+    "tags": ["React.js", "Express.js", "MySQL", "Docker", "JWT"],
+    "visible": true
+  },
+  {
+    "name": "React-Express-Keycloak",
+    "link": "https://github.com/copipastaguy/authentication",
+    "description": "Learning project for authentication. Authentication service with ReactJS client, ExpressJS backend, Keycloak as OAuth server. Exploring open-source and implementing within our project.",
+    "tags": ["React.js", "Express,js", "Keycloak", "Authentication", "JWT"],
+    "visible": true
+  },
+  {
+    "name": "Cross Roads: Kinect Project",
+    "link": "https://www.behance.net/gallery/89011499/Cross-Roads-Kinect-Project",
+    "description": "A Kinect project made in Unity3D to educate elderly on Silver Zones.",
+    "tags": ["Game Development", "Kinect Console", "Unity3D", "C#"],
+    "visible": true
+  },
+  {
+    "name": "Jankenpon (Rock Paper Scissors)",
+    "link": "https://github.com/copipastaguy/python/tree/main/jankenpon",
+    "description": "A simple Python command line game of Rock Paper Scissors.",
+    "tags": ["Python", "CLI"],
+    "visible": true
+  },
+  {
+    "name": "Python Job Web Scraping",
+    "link": "https://github.com/copipastaguy/python/tree/main/jobScrape",
+    "description": "Job web scraping script made for LinkedIn",
+    "tags": ["Python", "Web Scraping"],
+    "visible": true
+  }
+]
