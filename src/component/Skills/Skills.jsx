@@ -25,7 +25,7 @@ const About = () => {
               <ArrowRightIcon sx={{ color: "red" }} fontSize="large" />
             </Typography>
 
-            <Typography>Javascript</Typography>
+            <Typography>Javascript (ES6+)</Typography>
           </Stack>
 
           <Stack direction="row" alignItems="center">
