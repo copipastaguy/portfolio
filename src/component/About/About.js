@@ -1,6 +1,6 @@
-import React from "react";
-import { Grid, Stack, Typography, Link, Button } from "@mui/material";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import { Grid, Link, Stack, Typography } from "@mui/material";
+import React from "react";
 
 const About = () => {
   const skills = ["Javascript (ES6+)", "React.js", "Next.js", "Node.js", "Express.js", "Docker", "Gitlab"];
