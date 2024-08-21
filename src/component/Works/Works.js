@@ -18,7 +18,7 @@ function Works() {
                   </Typography>
 
                   <Typography>{work.description}</Typography>
-                  <Stack direction="row" alignItems="center" spacing={2}>
+                  <Stack direction="row" alignItems="center" spacing={2} flexWrap="wrap" sx={{ display: { xs: "none", sm: "flex" } }}>
                     <Typography>Tags:</Typography>
                     {work.tags.map((tag) => (
                       <Box sx={{ border: "1px solid", borderRadius: "8px", padding: "5px 10px" }}>

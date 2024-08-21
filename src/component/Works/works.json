@@ -10,7 +10,7 @@
     "name": "React-Express-Keycloak",
     "link": "https://github.com/copipastaguy/authentication",
     "description": "Learning project for authentication. Authentication service with ReactJS client, ExpressJS backend, Keycloak as OAuth server. Exploring open-source and implementing within our project.",
-    "tags": ["React.js", "Express,js", "Keycloak", "Authentication", "JWT"],
+    "tags": ["React.js", "Express.js", "Keycloak", "Authentication", "JWT"],
     "visible": true
   },
   {
